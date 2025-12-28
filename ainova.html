@@ -1,1 +1,242 @@
-<h1>Hello HubSpot Test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ainova Digital Solutions | Hubspot Practice Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .form-container {
+            transition: all 0.3s ease;
+        }
+        .form-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <!-- Header / Navigation -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">A</span>
+                    </div>
+                    <span class="text-xl font-bold text-blue-900">Ainova</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-slate-600 hover:text-blue-700 font-medium">Home</a>
+                    <a href="#services" class="text-slate-600 hover:text-blue-700 font-medium">Services</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-blue-700 font-medium">Pricing</a>
+                    <a href="#resources" class="text-slate-600 hover:text-blue-700 font-medium">Resources</a>
+                </div>
+                <div>
+                    <a href="#contact" class="bg-blue-700 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-800 transition">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Lead Capture) -->
+    <header class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Automate Your Customer Growth with Ainova
+                </h1>
+                <p class="text-xl text-blue-100 mb-8">
+                    Integrated CRM, AI-driven call automation, and workflow intelligence to scale your Malaysia-based business.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-white text-blue-700 text-center px-8 py-4 rounded-lg font-bold hover:bg-slate-100 transition shadow-lg">
+                        Get Demo
+                    </a>
+                    <a href="#services" class="border border-white/40 bg-white/10 text-white text-center px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition backdrop-blur-sm">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            
+            <!-- PRACTICE AREA: Replace this with a HubSpot Embedded Form -->
+            <div class="md:w-5/12 bg-white p-8 rounded-2xl shadow-2xl text-slate-800 form-container">
+                <h3 class="text-2xl font-bold mb-2">Request a Strategy Session</h3>
+                <p class="text-slate-500 mb-6 text-sm">See how Ainova can transform your workflow.</p>
+                
+                <div id="hubspot-form-placeholder" class="space-y-4">
+                    <!-- Standard HTML Form as a placeholder -->
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Full Name</label>
+                        <input type="text" placeholder="Ahmad Bin Ali" class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Company Email</label>
+                        <input type="email" placeholder="ahmad@company.my" class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Industry</label>
+                        <select class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 outline-none">
+                            <option>Real Estate</option>
+                            <option>E-commerce</option>
+                            <option>SaaS</option>
+                            <option>Professional Services</option>
+                        </select>
+                    </div>
+                    <button type="button" class="w-full bg-orange-500 text-white py-3 rounded-md font-bold hover:bg-orange-600 transition" onclick="alert('In a real HubSpot setup, this form would sync directly to your CRM!')">
+                        Claim Free Audit
+                    </button>
+                    <p class="text-[10px] text-center text-slate-400 mt-4">
+                        By submitting, you agree to our Privacy Policy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Our Core Capabilities</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto text-lg">We provide the technical infrastructure to help your sales and marketing teams perform at their peak.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-300 transition shadow-sm">
+                <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">AI Call Automation</h3>
+                <p class="text-slate-600 mb-4">Qualification calls that sound human. Integrated directly with your HubSpot lead status.</p>
+                <a href="#" class="text-blue-700 font-semibold hover:underline">Learn more →</a>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-300 transition shadow-sm">
+                <div class="w-12 h-12 bg-green-100 text-green-700 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">HubSpot Integration</h3>
+                <p class="text-slate-600 mb-4">We are Elite Partners. We set up your pipelines, workflows, and custom objects for maximum ROI.</p>
+                <a href="#" class="text-blue-700 font-semibold hover:underline">Learn more →</a>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-300 transition shadow-sm">
+                <div class="w-12 h-12 bg-orange-100 text-orange-700 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Growth Automation</h3>
+                <p class="text-slate-600 mb-4">Don't let leads go cold. Automate your nurture sequences based on real-time user behavior.</p>
+                <a href="#" class="text-blue-700 font-semibold hover:underline">Learn more →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Offer / Lead Magnet Area -->
+    <section id="resources" class="bg-slate-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <span class="bg-blue-600 text-[10px] uppercase font-bold px-3 py-1 rounded-full mb-4 inline-block">Free Resource</span>
+                <h2 class="text-3xl font-bold mb-6">The 2025 Guide to CRM Automation in SEA</h2>
+                <p class="text-slate-400 mb-8 text-lg">Download our 45-page whitepaper on how top companies in Malaysia and Singapore are using HubSpot to reduce CAC by 40%.</p>
+                
+                <!-- PRACTICE AREA: HubSpot "Call to Action" (CTA) button can go here -->
+                <button class="bg-blue-600 px-8 py-3 rounded font-bold hover:bg-blue-500 transition" onclick="toggleResourceModal()">
+                    Download Guide
+                </button>
+            </div>
+            <div class="md:w-1/2 bg-slate-800 p-6 rounded-lg border border-slate-700">
+                <div class="aspect-video bg-blue-900/30 flex items-center justify-center rounded border border-dashed border-blue-500/50">
+                    <span class="text-blue-400">PDF Preview / Mockup Image</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer + Tracking Instructions -->
+    <footer class="bg-white border-t py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-6 h-6 bg-blue-700 rounded flex items-center justify-center">
+                            <span class="text-white font-bold text-xs">A</span>
+                        </div>
+                        <span class="font-bold text-blue-900">Ainova</span>
+                    </div>
+                    <p class="text-sm text-slate-500">Helping businesses automate with intelligence. Based in Kuala Lumpur.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Product</h4>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li><a href="#" class="hover:text-blue-700">Automation Engine</a></li>
+                        <li><a href="#" class="hover:text-blue-700">CRM Connect</a></li>
+                        <li><a href="#" class="hover:text-blue-700">AI Voice</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li><a href="#" class="hover:text-blue-700">About Us</a></li>
+                        <li><a href="#" class="hover:text-blue-700">Careers</a></li>
+                        <li><a href="#" class="hover:text-blue-700">Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Subscribe to Newsletter</h4>
+                    <!-- PRACTICE AREA: HubSpot Newsletter Form -->
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Email" class="border px-3 py-2 rounded text-sm w-full outline-none focus:ring-1 focus:ring-blue-500">
+                        <button class="bg-blue-700 text-white px-4 py-2 rounded text-sm font-bold">Go</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
+                <p>© 2025 Ainova Digital Solutions. Built for HubSpot Practice.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-slate-600">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-600">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-600">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRACTICE AREA: Chat Widget -->
+    <!-- Place your HubSpot Chat Embed Script here -->
+    <div id="dummy-chat-widget" class="fixed bottom-6 right-6 w-14 h-14 bg-blue-700 rounded-full flex items-center justify-center text-white shadow-xl cursor-pointer hover:scale-110 transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+    </div>
+
+    <!-- Modal for Resource (HubSpot Lead Gen Practice) -->
+    <div id="resourceModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] hidden items-center justify-center p-4">
+        <div class="bg-white max-w-lg w-full rounded-2xl p-8 relative">
+            <button onclick="toggleResourceModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 class="text-2xl font-bold mb-4">Download the 2025 Guide</h3>
+            <p class="text-slate-600 mb-6">Enter your details and we'll send the PDF straight to your inbox.</p>
+            
+            <div class="space-y-4">
+                <input type="text" placeholder="First Name" class="w-full px-4 py-2 border rounded-md">
+                <input type="email" placeholder="Work Email" class="w-full px-4 py-2 border rounded-md">
+                <button class="w-full bg-blue-700 text-white py-3 rounded-md font-bold hover:bg-blue-800 transition">Get My Guide</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleResourceModal() {
+            const modal = document.getElementById('resourceModal');
+            modal.classList.toggle('hidden');
+            modal.classList.toggle('flex');
+        }
+
+        // Logic for tracking (This is where you'd paste the Hubspot script in <head>)
+        console.log("Site Loaded. Ready for HubSpot tracking code insertion.");
+    </script>
+</body>
+</html>
